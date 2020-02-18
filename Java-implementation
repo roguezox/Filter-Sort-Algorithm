@@ -1,0 +1,52 @@
+package com.company;
+
+import java.io.*;
+import java.util.Arrays;
+import java.util.List;
+
+//This is the standard java implementation for filter sort algorithm
+//Created By: Roguezox
+public class javafiltersort {
+    public static void main(String[] args) throws IOException {
+        int i;
+        int[] list=new int[21];
+        for(i=20;i>0;i-=2){
+            list[i]=i;
+        }
+     System.out.print("unsorted"+ Arrays.toString(list)+"\n");
+     System.out.print("sorted"+ Arrays.toString(sort(list, 2)));
+ 
+    }
+    public static int[] sort(int[] inlist,int level){
+
+        int lvl = 0;
+        if(level<2){
+          lvl=2;
+        }
+        else {
+            lvl=level;
+        }
+        System.out.print(lvl);
+        int i;
+       for(i=0;i<level;i++){
+           inlist=filter(inlist);
+        }
+        return inlist;
+    }
+    public static int[] filter(int[] intlist){
+        int k=0,i,swapper,j;
+        for(i=0;i<intlist.length;i++){
+
+            for (j=k+1;j<intlist.length;j++){
+                if(intlist[k]>intlist[j]){
+                    swapper=intlist[k];
+                    intlist[k]=intlist[j];
+                    intlist[j]=swapper;
+                }
+                k=j;
+            }
+            k=i;
+        }
+        return intlist;
+    }
+}

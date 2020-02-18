@@ -1,3 +1,6 @@
+#This the pyhton implementation of filter sort 
+#created by:roguezox
+
 lst = [2,4,3,55,32,11,23,9,17,15,1000,99,101,100,60,40,39,32,77,20,19,15,1000,20,20,20,20,1999987]
 
 h = 0

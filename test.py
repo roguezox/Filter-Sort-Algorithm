@@ -2,11 +2,8 @@ lst = [2,4,3,55,32,11,23,9,17,15,1000,99,101,100,60,40,39,32,77,20,19,15,1000,20
 
 h = 0
 
-
-
-
-def filter(list,level=2):
-  def listt(list):
+def sort(list,level=2):
+  def filter(list):
     list = list
     k = 0
     for i in range(0, len(list)):
@@ -21,7 +18,7 @@ def filter(list,level=2):
 
     return list
   for n in range(level):
-      list1=listt(list)
+      list1=filter(list)
 
   return list1
-print("sorted", filter(lst))
+print("sorted", sort(lst))

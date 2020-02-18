@@ -26,7 +26,6 @@ public class javafiltersort {
         else {
             lvl=level;
         }
-        System.out.print(lvl);
         int i;
        for(i=0;i<level;i++){
            inlist=filter(inlist);

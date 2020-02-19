@@ -6,13 +6,10 @@ import java.util.List;
 
 //This is the standard java implementation for filter sort algorithm
 //Created By: Roguezox
-public class javafiltersort {
+public class test2 {
     public static void main(String[] args) throws IOException {
         int i;
-        int[] list=new int[21];
-        for(i=20;i>0;i-=2){
-            list[i]=i;
-        }
+        int[] list={12,3,4,5,67,8,55,43,12,33,30,20,19,17,16,2,100,90,89,67,55,43,41,76,88,99};
      System.out.print("unsorted"+ Arrays.toString(list)+"\n");
      System.out.print("sorted"+ Arrays.toString(sort(list, 2)));
  
@@ -26,6 +23,7 @@ public class javafiltersort {
         else {
             lvl=level;
         }
+       
         int i;
        for(i=0;i<level;i++){
            inlist=filter(inlist);
